@@ -1,0 +1,85 @@
+#hero {
+  padding: 120px 0px;
+}
+
+main{
+  background: linear-gradient(rgb(44, 202, 255), rgb(174, 0, 255));
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: $secondaryColor;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.register-btn {
+  padding: 15px 20px;
+  background: linear-gradient(rgb(44, 202, 255), rgb(174, 0, 255));
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: $secondaryColor;
+  font-size: 20px;
+}
+
+.form__title{
+  font-size: 30px;
+}
+
+.table__information{
+  height: 50vh;
+  background: $secondaryColor;
+  padding: 20px 50px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.remove__img{
+  display: none;
+}
+
+table{
+  margin: 0 auto;
+  background: $secondaryColor;
+  display: none;
+  width: 100%;
+}
+
+.show__table{
+  display: block;
+}
+
+td,th{
+  width: 25%;
+}
+
+table,tr,th,td{
+  border: 1px solid gray;
+  border-collapse: collapse;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
