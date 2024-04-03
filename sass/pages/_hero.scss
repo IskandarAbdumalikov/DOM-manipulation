@@ -2,8 +2,9 @@
   padding: 120px 0px;
 }
 
-main{
-  background: linear-gradient(rgb(44, 202, 255), rgb(174, 0, 255));
+main {
+  background: $linearColor;
+  padding: 80px 0px;
 }
 
 .inputs {
@@ -39,18 +40,23 @@ input {
 
 .register-btn {
   padding: 15px 20px;
-  background: linear-gradient(rgb(44, 202, 255), rgb(174, 0, 255));
+  background: $linearColor;
   border-radius: 5px;
   border: 1px solid transparent;
   color: $secondaryColor;
   font-size: 20px;
+  transition: 1s;
 }
 
-.form__title{
+.register-btn:hover {
+  background: linear-gradient(rgb(2, 161, 214), rgb(115, 0, 168));
+}
+
+.form__title {
   font-size: 30px;
 }
 
-.table__information{
+.table__information {
   height: 50vh;
   background: $secondaryColor;
   padding: 20px 50px;
@@ -58,27 +64,30 @@ input {
   width: 60%;
 }
 
-.remove__img{
+.remove__img {
   display: none;
 }
 
-table{
+table {
   margin: 0 auto;
   background: $secondaryColor;
   display: none;
   width: 100%;
 }
 
-.show__table{
+.show__table {
   display: block;
 }
 
-
-td,th{
+td,
+th {
   width: 25%;
 }
 
-table,tr,th,td{
+table,
+tr,
+th,
+td {
   border: 1px solid gray;
   border-collapse: collapse;
   border-radius: 10px;
