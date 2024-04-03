@@ -56,5 +56,5 @@ registerBtn.addEventListener("click", (addInformation) => {
 
   noInformation.classList.add("remove__img");
   table.classList.add("show__table");
-  // return tr;
+   return tr;
 });
