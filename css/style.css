@@ -413,6 +413,12 @@ td {
   padding: 10px 20px;
 }
 
+th {
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 0px;
+}
+
 footer {
   background: #0B7572;
   display: flex;

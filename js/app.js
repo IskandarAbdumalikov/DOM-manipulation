@@ -54,7 +54,13 @@ registerBtn.addEventListener("click", (addInformation) => {
   tr.append(tdNumber);
   tr.append(tdPassword);
 
+  fullName.value = "";
+  username.value = "";
+  email.value = "";
+  number.value = "";
+  password.value = "";
+  confirmPassword.value = "";
   noInformation.classList.add("remove__img");
   table.classList.add("show__table");
-   return tr;
+  return tr;
 });
