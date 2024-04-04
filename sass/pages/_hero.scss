@@ -56,10 +56,19 @@ input {
   font-size: 30px;
 }
 
+@media(max-width:1050px){
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
 .table__information {
   height: 50vh;
   background: $secondaryColor;
   padding: 20px 50px;
+  overflow: auto;
   border-radius: 10px;
   width: 60%;
 }
@@ -68,12 +77,6 @@ input {
   display: none;
 }
 
-table {
-  margin: 0 auto;
-  background: $secondaryColor;
-  display: none;
-  width: 100%;
-}
 
 .show__table {
   display: block;
@@ -94,8 +97,20 @@ td {
   padding: 10px 20px;
 }
 
+tbody{
+  width: 100%;
+}
+
 th{
   background: rgb(0, 0, 0);
   color: $secondaryColor;
   border-radius: 0px;
+}
+
+table {
+  margin: 0 auto;
+  background: $secondaryColor;
+  display: none;
+  border: none;
+  width: 100%;
 }

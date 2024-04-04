@@ -375,23 +375,24 @@ input {
   font-size: 30px;
 }
 
+@media (max-width: 1050px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 .table__information {
   height: 50vh;
   background: white;
   padding: 20px 50px;
+  overflow: auto;
   border-radius: 10px;
   width: 60%;
 }
 
 .remove__img {
   display: none;
-}
-
-table {
-  margin: 0 auto;
-  background: white;
-  display: none;
-  width: 100%;
 }
 
 .show__table {
@@ -413,10 +414,22 @@ td {
   padding: 10px 20px;
 }
 
+tbody {
+  width: 100%;
+}
+
 th {
   background: rgb(0, 0, 0);
   color: white;
   border-radius: 0px;
+}
+
+table {
+  margin: 0 auto;
+  background: white;
+  display: none;
+  border: none;
+  width: 100%;
 }
 
 footer {
